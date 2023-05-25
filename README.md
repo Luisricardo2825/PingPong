@@ -1,6 +1,7 @@
 # PingPong 🏓
- Para a cadeira de metodos avançados. 
- O código deve ser executado a partir do arquivo `main.py`. O arquivo `new_game.py` é somente para comparação com a nova estrutura
+ ####  Para a cadeira de metodos avançados. 
+ - O código deve ser executado a partir do arquivo `main.py`.
+ - O arquivo `new_game.py` é somente para comparação com a nova estrutura
  
 # Diretorios 📁
 - ### Entities 👽
