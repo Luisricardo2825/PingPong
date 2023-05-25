@@ -8,7 +8,7 @@ score_now = 0
 game = " "
 
 
-
+# Cria uma instancia do TK(Existe somente para organizar e separar metodos relacionados a criação da janela)
 def create_root():
     instance = Tk()
     instance.title("Ping Pong")
@@ -18,15 +18,15 @@ def create_root():
     return instance
 
 
-root = create_root()  # Cria  o root da janela
+root = create_root()  # Cria  o root da janela(A janela dentro do SO)
 
 # Cria a interface inicial com o botão enviar
 game_instance = Game(root, score_now, game)
 
 # Adiciona background
 background_image_path = "assets/marte.png"
-bg_image = Image.open(background_image_path) # Carrega a imagem background
-bg_photo = ImageTk.PhotoImage(bg_image) # Tranforma em um objeto "PhotoImage"
+bg_image = Image.open(background_image_path)  # Carrega a imagem background
+bg_photo = ImageTk.PhotoImage(bg_image)  # Tranforma em um objeto "PhotoImage"
 game_instance.canvas.create_image(0, 0, image=bg_photo, anchor=NW)  # Só deus sabe pq só aqui que o background funciona
 # Fim background
 
